@@ -1,11 +1,10 @@
 #form{
     background-color: #1E1E1E;
-    height: 700px;
     padding: 2rem 0 2rem 0;
 }
 
 .container-conteudo{
-    display: flex;
+
     justify-content: center;
     align-items: center;
     row-gap: 1rem;
@@ -25,12 +24,23 @@
     margin: 20px 0;
 }
 
-#form .container-form, .container-form-login{
+.container-dados-carro{
+    display: none;
+}
+
+.container-form-login{
+    justify-content: center;
+    align-items: start;
+    column-gap: 2rem;
+}
+
+#form .container-form{
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 2rem;
+    flex-wrap: wrap;
 }
+
 
 /*Animacao de fade-in(aparecer) do formulario*/
 @keyframes fade-in {
@@ -62,7 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /*Botão Navegável*/
@@ -82,8 +92,8 @@
 
 .container-form input, .container-form select, .container-form select option, .container-form-login input{
     width: 100%;
-    max-width: 470px;
-    height: 30px;
+    max-width: 200px;
+    height: 35px;
     border-radius: 20px;
     color: #1E1E1E;
     padding: .8rem;
@@ -135,3 +145,84 @@
     display: none;
     transform: translateX(-300px);
 }
+
+/*Vantagens*/
+#vantagens{
+    background-color: #212121;
+    padding: 3.5rem 2rem;
+}
+
+.container-vantagens{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.container-vantagens, .container-teste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-teste{
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.titulo-vantagens{
+    text-align: center;
+    font-size: 36px;
+}
+
+.texto-vantagens{
+    width: 80%;
+    font-size: clamp(13px, 2vw, 16px);
+    text-align: center;
+}
+
+.vantagens-img{
+    width: 100%;
+    max-width: 180px;
+}
+
+/*Roadmap Motorista*/
+#roadmap-motorista{
+    background-color: #1E1E1E;
+    padding: 3.5rem 2rem;
+}
+
+.titulo-roadmap{
+    font-size: 36px;
+    text-align: center;
+}
+
+.container-roadmap{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.linha-roadmap{
+    height: 200px;
+    width: 3px;
+    background-color: #D20909;
+    margin-left: 8%;
+}
+
+.container-texto-roadmap{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-left: 1.5rem;
+}
+
+.texto-roadmap{
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.texto-roadmap::before{
+    content: '•';
+    font-size: 20px;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
