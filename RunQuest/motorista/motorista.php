@@ -21,7 +21,7 @@ $is_index = 2;
     ?>
 
     <main>
-        <section id="form">
+        <section id="form" class='container-animacao'>
             <div class="container-content">
                 <h1 class="titulo-form">Motorista</h1>
                 <div class="container-botoes">
@@ -95,9 +95,11 @@ $is_index = 2;
                                     <label for="crlv">CRLV:</label>
                                     <input type="text" name="crlv" id="crlv" placeholder='Digite sua CRLV...'>
                                 </div>
-                                
 
-                                    <button onclick='cadastrarPassageiro();' class="btn-cadastrar">Cadastrar</button>
+                                <div class="container-botao">
+                                    <span class="span-botao"><button onclick='cadastrarPassageiro();' class="btn-cadastrar">Cadastrar</button></span>
+                                </div>
+
                                 </div>
  
                             </div>
@@ -113,7 +115,9 @@ $is_index = 2;
 
                             <label for="senhaLogin">Senha:</label>
                             <input type="password" name="senhaLogin" id="senhaLogin" placeholder="Digite sua senha...">
-                            <button onclick="logarPassageiro();">Logar</button>
+                            <div class="container-botao-login">
+                                <span class="span-botao"><button onclick="logarPassageiro();">Logar</button></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,7 +125,7 @@ $is_index = 2;
         </section>
 
         <!--VANTAGENS DE SER MOTORISTA-->
-        <section id="vantagens">
+        <section id="vantagens" class='container-animacao'>
             <div class="container-vantagens">
                 <div class="container-teste">
                     <img src="../assets/img/vantagens-img.png" alt="icone vantagens RunQuest" class="vantagens-img">
@@ -145,7 +149,7 @@ $is_index = 2;
         </section>
 
         <!--ROADMAP MOTORISTA-->
-        <section id="roadmap-motorista">
+        <section id="roadmap-motorista" class='container-animacao'>
             <h1 class="titulo-roadmap">Roadmap</h1>
 
             <div class="container-roadmap">
@@ -164,8 +168,11 @@ $is_index = 2;
     <?php require_once '../footer/footer.php' ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="../assets/js/header.js"></script>
     <script src="../assets/js/crud.js"></script>
     <script src="../assets/js/motorista.js"></script>
+    <script src="../assets/js/animacao.js"></script>
 </body>
 </html>

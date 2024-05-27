@@ -1,3 +1,7 @@
+body{
+    background-color: #212121;
+}
+
 /*banner*/
 #banner{
     background-image: url('../img/banner-index.jpg');
@@ -30,24 +34,44 @@
 
 }
 
-.container-botao a{
+.container-botao button{
     color: var(--cor-texto);
     font-size: clamp(20px, 2vw, 18px);
     border: var(--borda-div);
     border-radius: 40px;
     padding: 15px 20px;
-    transition: all ease-in-out 250ms;
+    position: relative;
+    transition: width ease-in-out 500ms;
     text-decoration: none;
+    background-color: transparent;
+    z-index: 1;
 }
 
-.container-botao a:first-child{
-    margin-right: 1rem;
+.container-botao button:hover{
+    cursor: pointer;
 }
 
-.container-botao a:hover{
-    color: var(--cor-texto);
-    text-decoration: none;
-    transform: scale(1.05);
+.span-botao{
+    transition: width 500ms;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.span-botao::before{
+    background-color: #000;
+    content: '';
+    width: 0;
+    display: block;
+    height: 60px;
+    position: absolute;
+    border-radius: 30px;
+    transition: width 500ms;
+    transform: translateX(0) skew(-10deg);
+}
+
+.span-botao:hover::before{
+    width: 100%;
 }
 
 /*trabalhamos*/
@@ -105,6 +129,7 @@
     font-size: clamp(15px, 2vw, 18px);
     max-width: 610px;
     margin-top: 3rem;
+    text-align: center;
 }
 
 /*Nossa equipe*/

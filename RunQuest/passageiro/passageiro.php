@@ -21,7 +21,7 @@ $is_index = 2;
     ?>
 
     <main>
-        <section id="form">
+        <section id="form" class='container-animacao'>
             <div class="container-content">
                 <h1 class="titulo-form">Passageiro</h1>
                 <div class="container-botoes">
@@ -91,8 +91,11 @@ $is_index = 2;
     <?php require_once '../footer/footer.php' ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="../assets/js/header.js"></script>
     <script src="../assets/js/crud.js"></script>
     <script src="../assets/js/passageiro.js"></script>
+    <script src="../assets/js/animacao.js"></script>
 </body>
 </html>

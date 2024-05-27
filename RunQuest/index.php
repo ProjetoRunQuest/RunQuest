@@ -25,8 +25,8 @@ $is_index = 1;
                 <h1 class="banner-titulo">Faça parte você também!</h1>
 
                 <div class="container-botao">
-                <a href="#">Ser motorista</a>
-                <a href="passageiro/passageiro.php">Ser passageiro</a>
+                <span class='span-botao'><button onclick='redirecionar(this.value)' class='botao-banner' value='motorista'>Ser motorista</button></span>
+                <span class="span-botao"><button  onclick='redirecionar()' class='botao-banner' value='passageiro'>Ser passageiro</button></span>
                 </div>
             </div>
         </section>
@@ -35,7 +35,7 @@ $is_index = 1;
         <section id="trabalhamos">
                 <h1 class="titulo-trabalhos">Como nós trabalhamos</h1>
 
-                <div class="container-cards">
+                <div class="container-cards container-animacao">
                     <div class="cards">
 
                     </div>
@@ -52,7 +52,7 @@ $is_index = 1;
         </section>
 
         <!--RunQuest-->
-        <section id="runquest">
+        <section id="runquest" class='container-animacao'>
             <div class="container-img">
 
             </div>
@@ -63,11 +63,11 @@ $is_index = 1;
         </section>
 
         <!--Nossa equipe-->
-        <section id="nossa-equipe">
+        <section id="nossa-equipe" class='container-animacao'>
             <h1 class="titulo-equipe">Conheça nossa equipe</h1>
 
            <!-- Swiper -->
-           <div class="slide-container swiper">
+           <div class="slide-container swiper container-animacao">
             <div class="slide-content">
                 <div class="card-wrapper swiper-wrapper">
                     <div class="card swiper-slide">
@@ -102,29 +102,6 @@ $is_index = 1;
                             </div>
                         </div>
                     </div>
-
-                    <div class="card swiper-slide">
-                    <div class="card-content" id='conteudo-card'>
-                            <img src="assets/img/card-img1.png" class="img-card" alt="imagem do nosso integrante, matheus abriz">
-                            <div class="container-info">
-                                <h1 class="titulo-card">Gabrielle Costa</h1>
-                                <p class="subtitulo-card">Designer</p>
-                                <p class="texto-card">Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                    <div class="card-content" id='conteudo-card'>
-                            <img src="assets/img/card-img1.png" class="img-card" alt="imagem do nosso integrante, matheus abriz">
-                            <div class="container-info">
-                                <h1 class="titulo-card">Deivid Afonso</h1>
-                                <p class="subtitulo-card">Desenvolvedor Back-end</p>
-                                <p class="texto-card">Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book.</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             <div class="swiper-button-next"></div>
@@ -137,7 +114,10 @@ $is_index = 1;
     <!--FOOTER-->
     <?php require_once 'footer/footer.php' ?>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/animacao.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/header.js"></script>
 </html>
