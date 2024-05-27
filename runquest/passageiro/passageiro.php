@@ -1,5 +1,9 @@
+<?php 
+$is_index = 2;
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,57 +15,87 @@
     <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
     <title>Passageiro</title>
 </head>
-<body>
+<body onload="local()">
     <!--MENU-->
-    <?php require_once '../header/header.php'; ?>
+    <?php require_once '../header/header.php'; 
+    ?>
 
     <main>
-        <section id="form">
-            <div class="container-form">
+        <section id="form" class='container-animacao'>
+            <div class="container-content">
+                <h1 class="titulo-form">Passageiro</h1>
+                <div class="container-botoes">
+                    <a class="botao-passageiro" id="botao-cadastro" onclick="abrirCadastro();">Cadastro</a>
+                    <a class="botao-passageiro" id="botao-login" onclick="abrirLogin()">Login</a>
+                </div>
+                <!--FORMULARIO DE CADASTRO-->
+                <div class="container-conteudo">
+                    <div class="container-form">
+                        <div class="container-info">
+                            <label for="nomePassageiro">Nome:</label>
+                            <input type="text" name="nome" class="form-input" id="nomePassageiro" placeholder='Digite seu nome...'>
+                            <input type="hidden" name="hidden" value="0" id="tipoCliente">
 
-                <h1 class="titulo-form">Cadastro Passageiro</h1>
+                            <label for="emailPassageiro">E-mail:</label>
+                            <input type="email" name="email" class="form-input" placeholder='Digite seu email...' id="emailPassageiro">
+                            
+                            <label for="senhaPassageiro">Senha:</label>
+                            <input type="password" name="senha" class="form-input" placeholder='Digite sua senha...' id="senhaPassageiro">
 
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" class="form-input" id="nome" placeholder='Digite seu nome...'>
+                            <label for="cpfPassageiro">CPF:</label>
+                            <input type="text" name="cpf" class="form-input" placeholder='Digite seu CPF...' id="cpfPassageiro" maxlength="14" onkeyup="mascara(this, mascaraCPF)">
 
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" class="form-input" placeholder='Digite seu email...' id="email">
-                
-                <label for="nome">Senha:</label>
-                <input type="password" name="senha" class="form-input" placeholder='Digite sua senha...' id="senha">
+                            
+                            <label for="telefonePassageiro">Telefone:</label>
+                            <input type="text" name="telefone" class="form-input" placeholder='Digite seu telefone...' id="telefonePassageiro" maxlength="15" onkeyup="mascara(this, mascaraTelefone)">
+                        </div>
+                        
+                        <div class="container-info">
+                            <label for="enderecoPassageiro">Endereço:</label>
+                            <input type="text" name="endereco" class="form-input" placeholder='Digite seu endereço...' id="enderecoPassageiro">
 
-                <label for="cpf">CPF:</label>
-                <input type="text" name="cpf" class="form-input" placeholder='Digite seu CPF...' id="cpf">
-                
-                <label for="endereco">Endereço:</label>
-                <input type="text" name="endereco" class="form-input" placeholder='Digite seu endereço...' id="endereco">
+                            
+                            <label for="complementoPassageiro">Complemento:</label>
+                            <input type="text" name="complemento" class="form-input" placeholder='Digite o complemento...' id="complementoPassageiro">
+                            
+                            <label for="estadoPassageiro">Estado:</label>
+                            <select name="estado" id="estadoPassageiro">
+                                <option value="SaoPaulo" selected class='selecao'>São Paulo</option>
+                                <option value="RioDeJaneiro" class='selecao'>Rio de Janeiro</option>
+                                <option value="EspiritoSanto" class='selecao'>Espírito Santo</option>
+                            </select>
 
-                
-                <label for="complemento">Complemento:</label>
-                <input type="text" name="complemento" class="form-input" placeholder='Digite o complemento...' id="endereco">
-                
-                <label for="estado">Estado:</label>
-                <select name="estado" id="estado">
-                    <option value="SaoPaulo" selected>São Paulo</option>
-                    <option value="RioDeJaneiro">Rio de Janeiro</option>
-                    <option value="EspiritoSanto">Espírito Santo</option>
-                </select>
+                            <label for="cidadePassageiro">Cidade:</label>
+                            <input type="text" name="cidade" class="form-input" placeholder='Digite sua cidade...' id="cidadePassageiro">
 
-                <label for="cidade">Cidade:</label>
-                <input type="text" name="cidade" class="form-input" placeholder='Digite sua cidade...' id="cidade">
+                            <button onclick='cadastrarPassageiro();'>Cadastrar</button>
+                        </div>
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" name="telefone" class="form-input" placeholder='Digite seu telefone...' id="telefone">
+                    </div>
+                    <!--FORMULARIO DE LOGIN-->
+                    <div class="container-form-login">
+                        <div class="container-info">
+                            <label for="emailLoginP">Email:</label>
+                            <input type="email" name="emailLogin" id="emailLoginP" placeholder="Digite seu email..." class="form-input">
 
-                <button onclick='cadastrar();'>Cadastrar</button>
+                            <label for="senhaLoginP">Senha:</label>
+                            <input type="password" name="senhaLogin" id="senhaLoginP" placeholder="Digite sua senha...">
+                            <button onclick="logarPassageiro();">Logar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <!--FOOTER -->
     <?php require_once '../footer/footer.php' ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/passageiroCrud.js"></script>
+    <script src="../assets/js/passageiro.js"></script>
+    <script src="../assets/js/animacao.js"></script>
 </body>
 </html>

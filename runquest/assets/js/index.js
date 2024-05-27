@@ -22,3 +22,16 @@ var swiper = new Swiper(".slide-content", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+//Adicionando um botão para redirecionamento
+function redirecionar(valor){
+  let botao = document.getElementsByClassName('botao-banner');
+
+  if(botao[0].value == valor){
+    window.location.href = 'motorista/motorista.php';
+  }else{
+    window.location.href = 'passageiro/passageiro.php';
+  }
+}
+
+
