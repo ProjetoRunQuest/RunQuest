@@ -1,0 +1,6 @@
+top: 20px -> foto usuario
+top:  -> Meu Cadastro
+top: 165px - > meus pagamentos
+top: 235px -> Privacidade e segurança
+top: 657px -> logout
+
