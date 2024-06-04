@@ -37,16 +37,72 @@ $is_index = 1;
 
                 <div class="container-cards container-animacao">
                     <div class="cards">
+                        <h1 class="titulo-card">Quem somos?</h1>
+                        <p class="texto-card">A plataforma RunQuest é um sistema inovador que conecta membros da comunidade da FATEC, permitindo-lhes compartilhar caronas de forma fácil e conveniente para o campus e para casa. Funciona de maneira semelhante aos aplicativos de transporte populares, como Uber e 99, fornecendo uma solução adaptada às necessidades específicas da comunidade acadêmica. Além disso, oferece mais exclusividade, conectando os usuários de forma mais direta e personalizada.</p>                        
+                    </div>
 
+                <div class="cards">
+                    <!-- Swiper -->
+                <div class="slide-container swiper trabalhamos-slide-container">
+                    <div class="trabalhamos-slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h1 class="titulo-card">Problemas do dia a dia</h1>
+                                    <p class="texto-card">É perceptível que o sistema de transporte público em nosso país está enfrentando desafios consideráveis atualmente. Ao conduzirmos um estudo de caso, identificamos diversos problemas comuns enfrentados diariamente pelos cidadãos, entre eles:</p>
+                                    <ul>
+                                        <li class="texto-card">Atrasos e inconsistências no transporte</li>
+                                        <li class="texto-card">Superlotação</li>
+                                        <li class="texto-card">Custo elevado</li>
+                                        <li class="texto-card">Falta de acessibilidade</li>
+                                        <li class="texto-card">Segurança</li>
+                                        <li class="texto-card">Rotas inadequadas</li>
+                                    </ul>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <h1 class="titulo-card">Atrasos e inconsistências no transporte</h1>
+                                <p class="texto-card">Os estudantes muitas vezes enfrentam atrasos nos horários dos ônibus, trens ou metrôs, o que pode resultar em chegadas tardias às aulas ou compromissos na universidade.</p>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <h1 class="titulo-card">Superlotação</h1>
+                                <p class="texto-card">Os veículos de transporte público frequentemente ficam superlotados durante os horários de pico, tornando desconfortável e até mesmo impossível encontrar um lugar para sentar, além de dificultar o acesso aos pontos de embarque e desembarque.</p>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <h1 class="titulo-card">Custo elevado</h1>
+                                <p class="texto-card">Para alguns estudantes, os custos recorrentes do transporte público podem representar um fardo financeiro significativo, especialmente se forem necessárias várias viagens por dia ou semana.</p>
+                            </div>
+
+                            <div class="swiper-slide">
+                            <h1 class="titulo-card">Falta de acessibilidade</h1>
+                                <p class="texto-card">Alguns sistemas de transporte público podem não ser acessíveis para pessoas com mobilidade reduzida, tornando difícil para esses estudantes chegar à universidade de forma independente.</p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="titulo-card">Segurança</div>
+                                <p class="texto-card">Dependendo da localização e do horário, os estudantes podem se sentir inseguros ao utilizar o transporte público, especialmente durante a noite.</p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="titulo-card">Rotas inadequadas</div>
+                                <p class="texto-card">Algumas áreas podem ter rotas de transporte público mal planejadas ou insuficientes, o que pode aumentar o tempo de viagem ou exigir múltiplas transferências, tornando o processo de chegar à universidade mais complexo e demorado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trabalhamos-swiper-button-next swiper-button-next"></div>
+                    <div class="trabalhamos-swiper-button-prev swiper-button-prev"></div>
+                    <div class="trabalhamos-swiper-pagination"></div>
+           </div>
+                </div>
+
+                    <div class="cards">
+                        <h1 class="titulo-card">Solução</h1>
+                        <p class="texto-card">Plataformas de transporte como Uber e 99 surgiram para oferecer uma solução conveniente e eficiente para conectar motoristas e passageiros, abordando problemas como a falta de disponibilidade de táxis, falta de transparência nos preços e inconveniências no transporte urbano. Logo, a RunQuest, um projeto semelhante focado na comunidade da FATEC, pode contribuir para o transporte de maneiras diversas. Ao invés de competir com plataformas existentes, ela busca agregar valor à comunidade, especialmente atendendo a uma classe específica de estudantes e funcionários que enfrenta atrasos no transporte e mobilidade.</p>
                     </div>
                     <div class="cards">
-
-                    </div>
-                    <div class="cards">
-
-                    </div>
-                    <div class="cards">
-
+                        <h1 class="titulo-card">Conclusão</h1>
+                            <p class="texto-card">O projeto RunQuest oferece uma solução inovadora e sustentável para a mobilidade urbana na FATEC, alinhando-se com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU. Ao promover o compartilhamento de caronas, o projeto contribui para o crescimento econômico (ODS 8.1), a eficiência dos recursos (ODS 8.4) e a inclusão social (ODS 8.6). Ao oferecer uma alternativa acessível e eficiente de transporte, o RunQuest visa a redução das disparidades de acesso e oportunidades, promovendo um futuro mais sustentável e equitativo para a comunidade da FATEC.</p>
                     </div>
                 </div>
         </section>
@@ -54,7 +110,7 @@ $is_index = 1;
         <!--RunQuest-->
         <section id="runquest" class='container-animacao'>
             <div class="container-img">
-
+                <img src="assets/img/img-teste.svg" alt="imagem logo">
             </div>
             <div class="container-conteudo">
                 <h1 class="titulo-runquest">Por que a RunQuest?</h1>
@@ -115,9 +171,9 @@ $is_index = 1;
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next equipe-swiper-button-next"></div>
+            <div class="swiper-button-prev equipe-swiper-button-prev"></div>
+            <div class="swiper-pagination equipe-swiper-pagination"></div>
            </div>
         </section>
     </main>
