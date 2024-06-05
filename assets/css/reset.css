@@ -1,0 +1,23 @@
+/*importando a fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*formatação global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: var(--cor-texto);
+}
+
+/*criando variaveis para facilitar a manutenção*/
+:root{
+    --cor-fundo-escuro: #1E1E1E; 
+    --cor-fundo-claro: #212121;
+    --tamanho-titulo: 42px;
+    --tamanho-texto: 18px;
+    --cor-texto: #F9F9F9;
+    --borda-div: 3px solid #D20909;
+    --border-radius: 30px;
+    --cor-hover: #D20909;
+}
