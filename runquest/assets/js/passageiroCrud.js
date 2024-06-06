@@ -131,5 +131,3 @@ function mascaraCPF(c){
     c = c.replace(/(\d{3})(\d{3})/g, "$1.$2-"); //Adiciona o ponto após os outros 3 dígitos e o hífen antes dos últimos dois números
     return c;
 }
-
-

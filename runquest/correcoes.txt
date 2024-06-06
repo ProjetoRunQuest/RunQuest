@@ -1,1 +1,2 @@
-Precisa arrumar a logo(muito grande os lados, está dando problema)
+foto do usuario
+campo de exclusão de conta
