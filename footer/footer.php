@@ -8,7 +8,7 @@ if($is_index == 1){?>
             <img src="assets/img/logo.svg" alt="logo RunQuest em SVG">
         </div>
 
-        <div class="container-conteudo-footer">
+        <div class="container-conteudo-footer container-conteudo-footer-main">
             <div class="container-empresa">
                 <h1 class="titulo-footer">Empresa</h1>
                 <a href="#" class="link-footer">Motorista</a>
@@ -33,10 +33,50 @@ if($is_index == 1){?>
             </div>
         </div>
 
+        <div class="container-conteudo-footer dropdown-footer">
+            <div class="container-empresa">
+                <ul class="titulo-footer titulo-lista-footer">
+                    <li class="item-lista titulo-footer">Empresa
+                        <ul>
+                            <li><a href="motorista/motorisa.php" class='link-footer'>Motorista</a></li>
+                            <li><a href="passageiro/passageiro.php" class='link-footer'>Passageiro</a></li>
+                            <li><a href="#" class='link-footer'>Sobre Nós</a></li>
+                            <li><a href="#" class='link-footer'>Suporte</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container-links">
+                <ul class='titulo-footer titulo-lista-footer'>
+                    <li class="item-lista titulo-footer links-uteis">Links Úteis
+                        <ul>
+                            <li><a href="motorista/motorista.php" class='link-footer'>Termos de uso</a></li>
+                            <li><a href="motorista/motorista.php" class="link-footer">Cookies</a></li>
+                            <li><a href="motorista/motorista.php" class="link-footer">Políticas de Privacidade</a></li>
+                            <li><a href="motorista/motorista.php" class="link-footer">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container-contato">
+               <ul class="titulo-footer titulo-lista-footer">
+                <li class="item-lista titulo-footer contato">Contato
+                    <ul>
+                        <li class="link-footer endereco-footer texto-lista-footer">Avenida Merenda, 443</li>
+                        <li class="link-footer telefone-footer texto-lista-footer">+55 11 12345-6789</li>
+                        <li class="link-footer"><a href="mailto:projetofatecdiadema@gmail.com" class='link-footer email-footer'>projetofatecdiadema@gmail.com</a></li>
+                    </ul>
+                </li>
+               </ul>
+            </div>
+        </div>
+
         <div class="container-redes">
-            <a href="#" class="instagram-footer"><img src="assets/img/instagram.png" alt="link clicavel instagram runquest"></a>
-            <a href="#" class="youtube-footer"><img src="assets/img/youtube.png" alt="link clicavel youtube runquest"></a>
-            <a href="#"><img src="assets/img/github.png" alt="link clicavel github runquest"></a>
+            <a href="#" class="instagram-footer"><img src="assets/img/instagram.svg" alt="link clicavel instagram runquest" class="img-footer"></a>
+            <a href="#" class="youtube-footer"><img src="assets/img/youtube.svg" alt="link clicavel youtube runquest" class="img-footer"></a>
+            <a href="#"><img src="assets/img/github.svg" alt="link clicavel github runquest" class="img-footer"></a>
         </div>
         </div>
 
@@ -76,10 +116,40 @@ if($is_index == 1){?>
             </div>
         </div>
 
+        <div class="container-conteudo-footer dropdown-footer">
+            <div class="container-empresa">
+                <ul class='titulo-footer titulo-lista-footer'>
+                    <a href="motorista/motorista.php" class="link-footer"><li class='texto-lista-footer'>Motorista</li></a>
+                    <a href="motorista/passageiro.php" class="link-footer"><li class='texto-lista-footer'>Passageiro</li></a>
+                    <a href="#" class="link-footer"><li class='texto-lista-footer'>Sobre Nós</li></a>
+                    <a href="#" class="link-footer"><li class='texto-lista-footer'>Suporte</li></a>
+                </ul>
+            </div>
+
+            <div class="container-links">
+                <h1 class="titulo-footer">Links Úteis</h1>
+                <ul class='titulo-footer titulo-lista-footer'>
+                    <a href="motorista/motorista.php" class="link-footer"><li class='texto-lista-footer'>Termos de uso</li></a>
+                    <a href="motorista/motorista.php" class="link-footer"><li class='texto-lista-footer'>Cookies</li></a>
+                    <a href="motorista/motorista.php" class="link-footer"><li class='texto-lista-footer'>Políticas de Privacidade</li></a>
+                    <a href="motorista/motorista.php" class="link-footer"><li class='texto-lista-footer'>FAQ</li></a>
+                </ul>
+            </div>
+
+            <div class="container-contato">
+                <h1 class="titulo-footer">Contato</h1>
+                <ul class='titulo-footer titulo-lista-footer'>
+                    <li class="link-footer endereco-footer">Avenida Merenda, 443</li>
+                    <li class="link-footer telefone-footer">+55 11 12345-6789</li>
+                    <li><a href="mailto:projetofatecdiadema@gmail.com" class="link-footer email-footer">projetofatecdiadema@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div class="container-redes">
-            <a href="#" class="instagram-footer"><img src="../assets/img/instagram.png" alt="link clicavel instagram runquest"></a>
-            <a href="#" class="youtube-footer"><img src="../assets/img/youtube.png" alt="link clicavel youtube runquest"></a>
-            <a href="#"><img src="../assets/img/github.png" alt="link clicavel github runquest"></a>
+            <a href="#" class="instagram-footer"><img src="../assets/img/instagram.svg" alt="link clicavel instagram runquest" class="img-footer"></a>
+            <a href="#" class="youtube-footer"><img src="../assets/img/youtube.svg" alt="link clicavel youtube runquest" class="img-footer"></a>
+            <a href="#"><img src="../assets/img/github.svg" alt="link clicavel github runquest" class="img-footer"></a>
         </div>
         </div>
 

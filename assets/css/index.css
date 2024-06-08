@@ -109,6 +109,7 @@ body{
     overflow: hidden;
 }
 
+
 .cards p{
     width: 80%;
     max-width: 500px;
@@ -286,7 +287,7 @@ body{
 .swiper-button-next::after{
     content: '';
     position: absolute;
-    left: 40px;
+    left: 25px;
     color: var(--cor-texto);
 }
 
@@ -325,7 +326,7 @@ body{
 .swiper-button-prev::after{
     content:  '';
     position: absolute;
-    right: 40px;
+    right: 25px;
     color: var(--cor-texto);
 }
 
@@ -345,6 +346,7 @@ body{
 
     .cards{
         max-width: 80%;
+        height: unset;
     }
 
     #runquest{

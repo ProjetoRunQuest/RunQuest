@@ -25,10 +25,9 @@ $is_index = 2;
         <section id="container-dados">
             <div class="barra-lateral">
                 <div class="container-teste">
-                        <a href="" class="opcoes-nav"><img src="../assets/img/foto-usuario.png" alt="foto usuario">Meu Perfil</a>
-                        <a href="" class="opcoes-nav"><img src="../assets/img/cadastro-usuario.png" alt="icone cadastro">Meu Cadastro</a>
+                        <a href="perfil.php" class="opcoes-nav"><img src="../assets/img/foto-usuario.png" alt="foto usuario">Meu Perfil</a>
+                        <a href="cadastro.php" class="opcoes-nav"><img src="../assets/img/cadastro-usuario.png" alt="icone cadastro">Meu Cadastro</a>
                         <a href="pagamentos.php" class="opcoes-nav"><img src="../assets/img/pagamento-usuario.png" alt="icone pagamentos">Meus Pagamentos</a>
-                        <a href="" class="opcoes-nav"><img src="../assets/img/seguranca-usuario.png" alt="icone seguranca e privacidade">Privacidade e segurança</a>
                 </div>
                 <span class="barra-lateral-active"></span>
 

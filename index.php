@@ -61,32 +61,32 @@ $is_index = 1;
 
                             <div class="swiper-slide">
                             <h1 class="titulo-card">Atrasos e inconsistências no transporte</h1>
-                                <p class="texto-card">Os estudantes muitas vezes enfrentam atrasos nos horários dos ônibus, trens ou metrôs, o que pode resultar em chegadas tardias às aulas ou compromissos na universidade.</p>
+                                <p class="texto-card">Os estudantes muitas vezes enfrentam atrasos nos horários dos ônibus, trens ou metrôs, complicando sua rotina diária. Esses atrasos podem resultar em chegadas tardias às aulas ou compromissos importantes na universidade. A imprevisibilidade dos horários de transporte causa stress e frustração, afetando negativamente a pontualidade. Além disso, a espera prolongada nos pontos de parada aumenta o tempo total de viagem. A falta de confiabilidade nos serviços de transporte público prejudica a organização do dia a dia dos estudantes.</p>
                             </div>
 
                             <div class="swiper-slide">
                             <h1 class="titulo-card">Superlotação</h1>
-                                <p class="texto-card">Os veículos de transporte público frequentemente ficam superlotados durante os horários de pico, tornando desconfortável e até mesmo impossível encontrar um lugar para sentar, além de dificultar o acesso aos pontos de embarque e desembarque.</p>
+                                <p class="texto-card">Os veículos de transporte público frequentemente ficam superlotados durante os horários de pico, causando desconforto aos estudantes. A superlotação torna difícil encontrar um lugar para sentar, forçando muitos a viajar em pé em condições apertadas. Além disso, o acesso aos pontos de embarque e desembarque fica dificultado, resultando em atrasos e transtornos. Esse ambiente desconfortável e congestionado aumenta o stress e a exaustão, especialmente para aqueles que têm longos trajetos diários. A falta de espaço adequado também pode levar a situações de segurança comprometida, agravando ainda mais a experiência dos usuários do transporte público.</p>
                             </div>
 
                             <div class="swiper-slide">
                             <h1 class="titulo-card">Custo elevado</h1>
-                                <p class="texto-card">Para alguns estudantes, os custos recorrentes do transporte público podem representar um fardo financeiro significativo, especialmente se forem necessárias várias viagens por dia ou semana.</p>
+                                <p class="texto-card">Para alguns estudantes, os custos recorrentes do transporte público podem representar um fardo financeiro significativo. Esse problema é ainda mais grave quando são necessárias várias viagens por dia ou semana, aumentando as despesas mensais. O impacto financeiro pode limitar a capacidade dos estudantes de utilizar o transporte público regularmente, forçando-os a buscar alternativas menos convenientes. Além disso, esses gastos podem reduzir o orçamento disponível para outras necessidades essenciais, como alimentação e material acadêmico.</p>
                             </div>
 
                             <div class="swiper-slide">
                             <h1 class="titulo-card">Falta de acessibilidade</h1>
-                                <p class="texto-card">Alguns sistemas de transporte público podem não ser acessíveis para pessoas com mobilidade reduzida, tornando difícil para esses estudantes chegar à universidade de forma independente.</p>
+                                <p class="texto-card">Alguns sistemas de transporte público podem não ser acessíveis para pessoas com mobilidade reduzida, dificultando o deslocamento desses estudantes. A falta de rampas, elevadores e veículos adaptados torna o trajeto até a universidade desafiador. Além disso, a ausência de sinalização adequada e de apoio para cadeirantes agrava a situação. Em muitas cidades, a infraestrutura de transporte não atende às necessidades específicas dessas pessoas, limitando sua independência. Esse cenário exige que os estudantes com mobilidade reduzida dependam de terceiros para se deslocarem, impactando sua autonomia e acesso à educação.</p>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="titulo-card">Segurança</div>
-                                <p class="texto-card">Dependendo da localização e do horário, os estudantes podem se sentir inseguros ao utilizar o transporte público, especialmente durante a noite.</p>
+                                <h1 class="titulo-card">Segurança</h1>
+                                <p class="texto-card">A segurança é uma preocupação crucial para muitos estudantes ao utilizarem o transporte público. Dependendo da localização e do horário, eles podem se sentir inseguros, especialmente durante a noite. Certas áreas têm índices mais elevados de criminalidade, aumentando o medo. A iluminação pública inadequada em pontos de parada ou estações agrava a sensação de vulnerabilidade. A presença de indivíduos suspeitos ou comportamentos inadequados também contribui para a insegurança. Em horários noturnos, a menor frequência de ônibus e trens leva a longas esperas em locais potencialmente perigosos, fazendo com que muitos se sintam expostos a riscos.</p>
                             </div>
 
                             <div class="swiper-slide">
-                                <div class="titulo-card">Rotas inadequadas</div>
-                                <p class="texto-card">Algumas áreas podem ter rotas de transporte público mal planejadas ou insuficientes, o que pode aumentar o tempo de viagem ou exigir múltiplas transferências, tornando o processo de chegar à universidade mais complexo e demorado.</p>
+                                <h1 class="titulo-card">Rotas inadequadas</h1>
+                                <p class="texto-card">Algumas áreas podem ter rotas de transporte público mal planejadas ou insuficientes, complicando o deslocamento dos estudantes. Essas rotas mal estruturadas podem aumentar significativamente o tempo de viagem, exigindo múltiplas transferências entre diferentes linhas. Isso torna o processo de chegar à universidade mais complexo e demorado, causando frustração e desgaste. A falta de conexões diretas e a frequência irregular dos serviços agravam a situação, obrigando os estudantes a planejar suas viagens com antecedência excessiva.</p>
                             </div>
                         </div>
                     </div>

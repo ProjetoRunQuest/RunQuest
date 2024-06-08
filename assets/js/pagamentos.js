@@ -17,7 +17,6 @@ for(let i = 0; i < opcoesNav.length; i++){
         //Meus pagamentos
         }else if(opcoesNav[2].matches(':hover')){
             barraActive[0].style.top = '165px';
-        //Privacidade e segurança
         }
 
         for(let i = 0; i < opcoesNav.length; i++){
@@ -45,8 +44,8 @@ barraL[0].addEventListener('mouseout', function(){
         barraL[0].style.marginLeft = '-25px';
 
 
-        if(opcoesNav[i].matches(':hover') == false && barraL[0].matches(':hover') == false){
-            barraActive[0].style.top = '96px';
+        if(!opcoesNav[i].matches(':hover') && !barraL[0].matches(':hover')){
+            barraActive[0].style.top = '165px';
         }
     }
 })
@@ -75,14 +74,6 @@ function abrirModal(tipoForm){
             modalEmailT[0].style.opacity = '1';
             containerDados.style.filter = 'blur(2px)';
         }, 500)
-    }else if(tipoForm == 'perfil'){
-        modalEndereco[0].style.top = `calc(${posicaoScroll}px + 50px)`;
-        modalEndereco[0].style.display = 'flex';
-        containerDados.style.transition = 'all ease-in-out 300ms'
-        setTimeout(function(){
-            modalEndereco[0].style.opacity = '1';
-            containerDados.style.filter = 'blur(2px)';
-        }, 500)
     }
     console.log(tipoForm)
 }
@@ -106,13 +97,6 @@ function fecharModal(tipoForm){
         containerDados.style.filter = 'unset'
         setTimeout(function(){
             modalEmailT[0].style.display = 'none'
-            containerDados.style.transition = 'unset'
-        }, 500)
-    }else if(tipoForm == 'perfil'){
-        modalEndereco[0].style.opacity = '0'
-        containerDados.style.filter = 'unset'
-        setTimeout(function(){
-            modalEndereco[0].style.display = 'none'
             containerDados.style.transition = 'unset'
         }, 500)
     }

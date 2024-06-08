@@ -6,37 +6,23 @@ body{
     display: flex;
 }
 
-.container-conteudo-pagamento{
-    margin: 2rem auto;
-}
-
-.container-pagamento{
+.container-perfil{
     display: flex;
     flex-direction: column;
-    margin: 6rem auto 2rem auto;
+    margin: 2rem auto;
     padding-left: 2rem;
     position: relative;
 }
 
-.titulo-pagamento{
+.titulo-perfil{
     font-size: 34px;
 }
 
-.subtitulo-pagamento{
+.subtitulo-perfil{
     font-size: 16px;
     color: #C2C2C2;
     margin-bottom: 1rem;
 }
-
-.img-cartao{
-    width: 250px;
-    height: auto;
-}
-
-.container-cartao-info{
-    display: flex;
-}
-
 
 .barra-lateral{
     padding: 2rem;
@@ -59,7 +45,7 @@ body{
     width: 103px;
     height: 60px;
     z-index: -1;
-    top: 165px;
+    top: 96px;
     transition: all ease-in-out 500ms;
 }
 
@@ -92,8 +78,8 @@ body{
     height: auto;
 }
 
-.container-form-pagamento{
-    margin: 2rem auto;
+.container-form-cadastro{
+    margin-top: 1rem;
     border: 2.5px solid #F9F9F9;
     border-radius: 20px;
     padding: 1rem 2rem;
@@ -104,9 +90,10 @@ body{
 }
 
 /*estilizacao formulario*/
-.form-pagamento{
+.form-cadastro{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     row-gap: .8rem;
 }
@@ -116,11 +103,12 @@ body{
     margin-bottom: .8rem;
 }
 
-.container-form-pagamento{
+.container-form-cadastro{
+    width: vw;
     min-width: 400px;
 }
 
-.form-pagamento label{
+.form-cadastro label{
     font-size: 16px;
 }
 
@@ -136,24 +124,44 @@ body{
     color: #2F2E2E;
 }
 
-.container-cartao, .container-codigo, .container-validade{
-    display: flex;
+.input-cadastro[type="file"]{
+    display: none;
 }
 
-.container-cartao{
-    column-gap: 1rem;
+.botao-upload{
+    border-radius: 40px;
+    border: 3px solid #D20909;
+    padding: .8rem;
+    width: fit-content;
+    cursor: pointer;
 }
 
-.container-codigo, .container-validade{
-    flex-direction: column;
+.nova-senha{
+    content: '';
+    background-image: url('../img/senha-escondida.svg');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 46px;
+    top: 446px;
 }
 
-.container-validade input{
-    width: 70%;
+.nova-senha:hover{
+    cursor: pointer;
 }
 
-.container-codigo label, .container-validade label{
-    margin-bottom: .8rem;
+.confirmar-senha{
+    content: '';
+    background-image: url('../img/senha-escondida.svg');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 46px;
+    top: 530px;
 }
 
 .span-botao{
@@ -163,6 +171,7 @@ body{
     position: relative;
     overflow: hidden;
     margin: 1rem 0;
+    align-self: end;
 }
 
 .span-botao::before{
@@ -181,10 +190,6 @@ body{
     width: 153.7px;
 }
 
-.span-botao-cadastrar{
-    align-self: end;
-}
-
 .btn-cadastro{
     color: var(--cor-texto);
     font-size: clamp(14px, 2vw, 12px);
@@ -200,13 +205,6 @@ body{
 
 .btn-cadastro:hover{
     cursor: pointer;
-}
-
-.container-cartao-pagamento{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 /*container de email/telefone*/
@@ -240,6 +238,7 @@ body{
     border: none;
     color: var(--cor-hover);
     font-size: 16px;
+    align-self: center;
 }
 
 .botao-info:hover{
@@ -370,11 +369,6 @@ body{
         flex-wrap: wrap;
       }
       
-      .container-pagamento{
-        padding-left: unset;
-        margin: 0 auto 2rem auto;
-      }
-
       .barra-lateral {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -384,7 +378,7 @@ body{
         margin-left: unset !important;
       }
       
-      .container-cadastro {
+      .container-perfil {
         grid-row-start: 1;
         grid-row-end: 2;
         grid-column-start: 2;
@@ -393,7 +387,7 @@ body{
         margin: 3rem auto 0 auto;
       }
 
-      .container-form-pagamento, .container-info, .container-endereco{
+      .container-form-cadastro, .container-info, .container-endereco{
         width: 50vw;
         min-width: unset;
         max-width: 500px;
@@ -434,7 +428,7 @@ body{
         font-size: clamp(10px, 1.5vw, 16px);
     }
 
-    .container-form-pagamento, .container-info, .container-endereco{
+    .container-form-cadastro, .container-info, .container-endereco{
         width: 60vw;
     }
 }
@@ -445,14 +439,8 @@ body{
     }
 }
 
-@media screen and (max-width: 800px){
-    .container-form-pagamento, .container-info, .container-endereco{
-        width: 70vw;
-    }
-}
-
 @media screen and (max-width: 550px){
-    .container-form-pagamento, .container-info, .container-endereco{
+    .container-form-cadastro, .container-info, .container-endereco{
         width: 70vw;
     }
 
