@@ -1,0 +1,432 @@
+body{
+    background-color: #212121;
+}
+
+#form{
+    background-color: #1E1E1E;
+    padding: 2rem 0 2rem 0;
+}
+
+.container-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+/*Formulário*/
+.titulo-form{
+    font-size: clamp(20px + 1.5vw, 0.3043rem + 2.8vw, 42px);
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.container-botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container-form-login{
+    justify-content: center;
+    align-items: start;
+    column-gap: 2rem;
+}
+
+#form .container-form, .container-dados-carro{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 250px));
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.container-dados-carro{
+    grid-template-columns: repeat(3, 250px);
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.titulo-cadastro{
+    margin: 0 0 1.5rem .5rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+/*Animacao de fade-in(aparecer) do formulario*/
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        transform: translateX(-300px);
+    }50%{
+        opacity: 0.2;
+    }75%{
+        opacity: 0.5;
+    }100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*Animacao de fade-off(sumir) do formulario*/
+@keyframes fade-off {
+    0%{
+        transform: translateX(0);
+    }50%{
+        opacity: 0.5;
+    }100%{
+        transform: translateX(300px);
+    }
+}
+
+.container-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container-senha{
+    position: relative;
+}
+
+.container-info:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.container-form-login .container-info{
+    position: relative;
+}
+
+/*Botão Navegável*/
+.botao-passageiro{
+    font-size: var(--tamanho-texto);
+    text-decoration: none;
+}
+
+.botao-passageiro:first-child{
+    margin-right: .8rem;
+}
+
+.botao-passageiro:hover{
+    text-decoration: underline;
+}
+
+
+.container-form input, .container-form select, .container-form select option, .container-form-login input{
+    width: 100%;
+    max-width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    color: #1E1E1E;
+    padding: .8rem;
+    font-size: 13px;
+}
+
+.container-info input, .container-info select{
+    margin-bottom: .8rem;
+    background-color: #D9D9D9;
+}
+
+.container-form label, .container-info label{
+    font-size: var(--tamanho-texto);
+    margin: 0 0 .5rem .5rem;
+}
+
+
+.container-form button, .container-form-login button{
+    color: var(--cor-texto);
+    font-size: var(--tamanho-texto);
+    border: var(--borda-div);
+    border-radius: 40px;
+    padding: 12px 18px;
+    transition: all ease-in-out 250ms;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: .8rem;
+    position: relative;
+}
+
+.nova-senha{
+    content: '';
+    background-image: url('../img/senha-escondida.svg');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 39px;
+    right: 59px;
+}
+
+.senha-login{
+    content: '';
+    background-image: url('../img/senha-escondida.svg');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 117px;
+    right: 11px;
+}
+
+.nova-senha:hover, .senha-login:hover{
+    cursor: pointer;
+}
+
+.container-form-login button{
+    width: 116px;
+}
+
+.btn-cadastrar{
+    margin-top: 1.5rem !important;
+}
+
+.container-botao{
+    position: relative;
+    overflow: hidden;
+}
+
+.span-botao{
+    transition: width 500ms;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.span-botao::before{
+    background-color: #000;
+    content: '';
+    width: 0;
+    display: block;
+    height: 52px;
+    position: absolute;
+    border-radius: 40px;
+    transition: width 500ms;
+    transform: translateX(0) skew(-10deg);
+    bottom: -15px;
+}
+
+.span-botao:hover::before{
+    width: 116px;
+}
+
+.container-botao-login .span-botao:hover::before{
+    width: 100%;
+}
+
+.container-form select{
+    padding: unset;
+    padding-left: .8rem;
+}
+
+/*Formuláro de login*/
+.container-form-login{
+    display: none;
+    transform: translateX(-300px);
+}
+
+/*Vantagens*/
+#vantagens{
+    background-color: #212121;
+    padding: 3.5rem 2rem;
+}
+
+.container-vantagens{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.container-vantagens, .container-teste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-teste{
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 0 auto;
+}
+
+.titulo-vantagens{
+    text-align: center;
+    font-size: 36px;
+}
+
+.texto-vantagens{
+    width: 300px;
+    font-size: clamp(13px, 2vw, 16px);
+    text-align: center;
+}
+
+.vantagens-img{
+    width: 100%;
+    max-width: 180px;
+}
+
+/*Roadmap Motorista*/
+#roadmap-motorista{
+    background-color: #1E1E1E;
+    padding: 3.5rem 2rem;
+}
+
+.titulo-roadmap{
+    font-size: 36px;
+    text-align: center;
+}
+
+.container-roadmap{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.linha-roadmap{
+    height: 200px;
+    width: 3px;
+    background-color: #D20909;
+    margin-left: 8%;
+}
+
+.container-texto-roadmap{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-left: 1.5rem;
+}
+
+.texto-roadmap{
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.texto-roadmap::before{
+    content: '•';
+    font-size: 20px;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1300px){
+    #vantagens{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .container-vantagens{
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #form .container-form{
+        grid-template-columns: repeat(3, minmax(100px, 200px));
+    }
+
+    #form .container-dados-carro{
+        grid-template-columns: repeat(3, minmax(150px, 200px));
+    }
+
+    .titulo-cadastro{
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #form .container-form{
+        grid-template-columns: repeat(2, minmax(100px, 150px));
+    }
+
+    .titulo-cadastro{
+        grid-column-end: 4;
+    }
+
+    .container-senha, .container-cpf{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .container-telefone{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .container-endereco{
+        grid-row-start: 5;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .container-complemento{
+        grid-row-start: 5;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .container-estado{
+        grid-row-start: 6;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .container-cidade{
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    
+    #form .container-dados-carro{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: unset;
+    }
+
+    .container-form input, .container-form select, .container-form select option, .container-form-login input{
+        font-size: clamp(7px, 1.5vw, 10px);
+    }
+
+    .container-dados-carro .container-info:nth-child(2){
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .container-dados-carro .container-info:nth-child(3){
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .container-dados-carro .container-info:nth-child(4){
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .container-botao{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}

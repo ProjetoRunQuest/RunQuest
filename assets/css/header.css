@@ -1,0 +1,129 @@
+header{
+    background-color: #212121;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.container-header-mobile{
+    display: none;
+}
+
+.nav-opcoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-itens{
+    list-style-type: none;
+}
+
+.nav-itens a{
+    color: var(--cor-texto);
+    font-size: var(--tamanho-texto);
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-itens a::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    top: 25px;
+    height: 3px;
+    background-color: var(--cor-hover);
+    transition: width 350ms;
+}
+
+.nav-itens-ultimo a::before{
+    background-color: unset;
+    left: -6px;
+    width: 0;
+    top: -18px;
+    border-radius: 50%;
+    height: 35px;
+    opacity: 0;
+    transition: unset;
+    border: 3px solid #D20909;
+}
+
+.nav-itens a:hover{
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.nav-itens a:hover::before{
+    width: 100%;
+}
+
+.nav-itens-ultimo a:hover::before{
+    width: 35px;
+    opacity: 1;
+    animation: giro linear 800ms;
+}
+
+@keyframes giro {
+    0%{
+        transform: rotate(0);
+        border: 3px solid #F9F9F9;
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
+.nav-opcoes-mobile{
+    display: none;
+    margin-top: -10rem;
+}
+
+.nav-opcoes-mobile, .nav-itens-mobile{
+    transition: all ease-in-out 450ms;
+}
+
+
+
+/*RESPONSIVIDADE HEADER*/
+@media screen and (max-width: 670px){
+    .container-header{
+        display: none;
+    }
+
+    .container-header-mobile{
+        display: flex;
+    }
+
+    #menu-hamburguer{
+        display: block;
+    }
+
+    .container-opcoes-mobile{
+        background-image: url('../img/menu-aberto.png');
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+        transition: all ease-in-out 350ms;
+        cursor: pointer;
+    }
+
+    .nav-opcoes-mobile{
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .container-header-mobile{
+        flex-direction: column;
+    }
+
+    #menu-hamburguer{
+        margin-bottom: 40px;
+    }
+}
