@@ -25,7 +25,7 @@
                 <a href="pagamentos.php" class="opcoes-nav"><img src="../assets/img/pagamento-usuario.png" alt="icone pagamentos">Meus Pagamentos</a>
             </div>
             <span class="barra-lateral-active"></span>
-            <a href="#" class="logout-usuario"><img src="../assets/img/logout-usuario.png" alt="icone logout usuario"></a>
+            <a onclick="sair();" class="logout-usuario"><img src="../assets/img/logout-usuario.png" alt="icone logout usuario"></a>
         </div>
         <div class="container-conteudo-pagamento">
             <h1 class="titulo-pagamento">Meus pagamentos</h1>
