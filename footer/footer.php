@@ -14,7 +14,7 @@ if($is_index == 1){?>
                 <a href="motorista/motorista.php" class="link-footer">Motorista</a>
                 <a href="passageiro/passageiro.php" class="link-footer">Passageiro</a>
                 <a href="#" class="link-footer">Sobre nós</a>
-                <a href="#" class="link-footer">Suporte</a>
+                <a href="documentacao/documentacao.php" class="link-footer">Documentação</a>
             </div>
 
             <div class="container-links">
@@ -41,7 +41,7 @@ if($is_index == 1){?>
                             <li><a href="motorista/motorisa.php" class='link-footer'>Motorista</a></li>
                             <li><a href="passageiro/passageiro.php" class='link-footer'>Passageiro</a></li>
                             <li><a href="#" class='link-footer'>Sobre Nós</a></li>
-                            <li><a href="#" class='link-footer'>Suporte</a></li>
+                            <li><a href="documentacao/documentaca.php" class='link-footer'>Documentação</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -97,7 +97,7 @@ if($is_index == 1){?>
                 <a href="motorista/motorista.php" class="link-footer">Motorista</a>
                 <a href="passageiro/passageiro.php" class="link-footer">Passageiro</a>
                 <a href="#" class="link-footer">Sobre nós</a>
-                <a href="#" class="link-footer">Suporte</a>
+                <a href="../documentacao/documentacao.php" class="link-footer">Documentação</a>
             </div>
 
             <div class="container-links">
@@ -124,7 +124,7 @@ if($is_index == 1){?>
                             <li><a href="motorista/motorisa.php" class='link-footer'>Motorista</a></li>
                             <li><a href="passageiro/passageiro.php" class='link-footer'>Passageiro</a></li>
                             <li><a href="#" class='link-footer'>Sobre Nós</a></li>
-                            <li><a href="#" class='link-footer'>Suporte</a></li>
+                            <li><a href="../documentacao/documentacao.php" class='link-footer'>Documentação</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -33,72 +33,72 @@ $is_index = 2;
                     <div class="container-form">
                     <h1 class="titulo-cadastro">Informações pessoais</h1>
                         <div class="container-info">
-                            <label for="nomeMotorista">Nome:</label>
-                            <input type="text" name="nome" class="form-input" id="nomeMotorista" placeholder='Digite seu nome...' required>
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" class="form-input" id="nome" placeholder='Digite seu nome...' required>
                             <input type="hidden" name="hidden" value="0" id="tipoCliente">
                         </div>
                         <div class="container-info">
-                            <label for="emailMotorista">E-mail:</label>
-                            <input type="email" name="emailMotorista" class="form-input" placeholder='Digite seu email...' id="emailMotorista" required>
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" class="form-input" placeholder='Digite seu email...' id="email" required>
                         </div>
 
                         <div class="container-info container-senha">
-                            <label for="nomeMotorista">Senha:</label>
-                            <input type="password" name="senhaMotorista" class="form-input cadastro-senha" placeholder='Digite sua senha...' id="senhaMotorista" required>
+                            <label for="nome">Senha:</label>
+                            <input type="password" name="senha" class="form-input cadastro-senha" placeholder='Digite sua senha...' id="senha" required>
                             <span class="nova-senha" onclick='senha(0)'></span>
                         </div>
                         
                         <div class="container-info container-cpf">
-                            <label for="cpfMotorista">CPF:</label>
-                            <input type="text" name="cpf" class="form-input" placeholder='Digite seu CPF...' id="cpfMotorista" minlength='14' maxlength="14" onkeyup="mascara(this, mascaraCPF)" required>
+                            <label for="cpf">CPF:</label>
+                            <input type="text" name="cpf" class="form-input" placeholder='Digite seu CPF...' id="cpf" minlength='14' maxlength="14" onkeyup="mascara(this, mascaraCPF)" required>
                         </div>
                         <div class="container-info container-telefone">
-                            <label for="telefoneMotorista">Telefone:</label>
-                            <input type="text" name="telefone" class="form-input" placeholder='Digite seu telefone...' id="telefoneMotorista" minlength='15' maxlength="15" onkeyup="mascara(this, mascaraTelefone)" required>
+                            <label for="telefone">Telefone:</label>
+                            <input type="text" name="telefone" class="form-input" placeholder='Digite seu telefone...' id="telefone" minlength='15' maxlength="15" onkeyup="mascara(this, mascaraTelefone)" required>
                         </div>
                         
                         <div class="container-info container-endereco">
-                            <label for="enderecoMotorista">Endereço:</label>
-                            <input type="text" name="endereco" class="form-input" placeholder='Digite seu endereço...' id="enderecoMotorista" required>
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" name="endereco" class="form-input" placeholder='Digite seu endereço...' id="endereco" required>
                         </div>
 
                         <div class="container-info container-complemento">
-                            <label for="complementoMotorista">Complemento:</label>
-                            <input type="text" name="complemento" class="form-input" placeholder='Digite o complemento...' id="complementoMotorista" required>
+                            <label for="complemento">Complemento:</label>
+                            <input type="text" name="complemento" class="form-input" placeholder='Digite o complemento...' id="complemento" required>
                         </div>
                             
                         <div class="container-info container-estado">
-                            <label for="estadoMotorista">Estado:</label>
-                            <select name="estadoMotorista" id="estadoMotorista" required>
+                            <label for="estado">Estado:</label>
+                            <select name="estado" id="estado" required>
                                 <option value="SaoPaulo" selected class='selecao'>São Paulo</option>
                                 <option value="RioDeJaneiro" class='selecao'>Rio de Janeiro</option>
                                 <option value="EspiritoSanto" class='selecao'>Espírito Santo</option>
                             </select>
                         </div>
                         <div class="container-info container-cidade">
-                            <label for="cidadeMotorista">Cidade:</label>
-                            <input type="text" name="cidadeMotorista" class="form-input" placeholder='Digite sua cidade...' id="cidadeMotorista" required>
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" name="cidade" class="form-input" placeholder='Digite sua cidade...' id="cidade" required>
                         </div>
                             
                             <div class="container-dados-carro">
                                 <h1 class="titulo-cadastro">Dados do carro</h1>
                                 <div class="container-info">
-                                    <label for="cnhMotorista">CNH:</label>
-                                    <input type="text" name="cnh" id="cnhMotorista" placeholder='Digite sua CNH...' required>
+                                    <label for="cnh">CNH:</label>
+                                    <input type="text" name="cnh" id="cnh" placeholder='Digite sua CNH...' required>
                                 </div>
 
                                 <div class="container-info">
-                                    <label for="crlvMotorista">CRLV:</label>
-                                    <input type="text" name="crlv" id="crlvMotorista" placeholder='Digite sua CRLV...' required>
+                                    <label for="crlv">CRLV:</label>
+                                    <input type="text" name="crlv" id="crlv" placeholder='Digite sua CRLV...' required>
                                 </div>
 
                                 <div class="container-info">
-                                    <label for="foto">CRLV:</label>
-                                    <input type="text" name="crlv" id="fotoMotorista" placeholder='Digite sua CRLV...' required>
+                                    <label for="crlv">CRLV:</label>
+                                    <input type="text" name="crlv" id="crlv" placeholder='Digite sua CRLV...' required>
                                 </div>
 
                                 <div class="container-botao">
-                                    <span class="span-botao"><button onclick='cadastrarMotorista();' class="btn-cadastrar">Cadastrar</button></span>
+                                    <span class="span-botao"><button onclick='cadastrarPassageiro();' class="btn-cadastrar">Cadastrar</button></span>
                                 </div>
 
                                 </div>
@@ -111,14 +111,14 @@ $is_index = 2;
                     <!--FORMULARIO DE LOGIN-->
                     <div class="container-form-login">
                         <div class="container-info">
-                            <label for="emailLoginM">Email:</label>
-                            <input type="email" name="emailLoginM" id="emailLoginM" placeholder="Digite seu email..." class="form-input">
+                            <label for="emailLogin">Email:</label>
+                            <input type="email" name="emailLogin" id="emailLogin" placeholder="Digite seu email..." class="form-input">
 
-                            <label for="senhaLoginM">Senha:</label>
-                            <input type="password" name="senhaLoginM" id="senhaLoginM" placeholder="Digite sua senha..." class='login-senha'>
+                            <label for="senhaLogin">Senha:</label>
+                            <input type="password" name="senhaLogin" id="senhaLogin" placeholder="Digite sua senha..." class='login-senha'>
                             <span class="senha-login" onclick='senha(1)'></span>
                             <div class="container-botao-login">
-                                <span class="span-botao"><button onclick="logarMotorista();">Logar</button></span>
+                                <span class="span-botao"><button onclick="logarPassageiro();">Logar</button></span>
                             </div>
                         </div>
                     </div>
@@ -173,8 +173,6 @@ $is_index = 2;
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="../assets/js/header.js"></script>
-    <script src="../assets/js/motoristaCrud.js"></script>
-    <script src="../assets/js/passageiroCrud.js"></script>
     <script src="../assets/js/motorista.js"></script>
     <script src="../assets/js/animacao.js"></script>
 </body>

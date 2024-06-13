@@ -12,7 +12,7 @@
                     <li class="nav-itens"><a href="passageiro/passageiro.php">Passageiro</a></li>
                     <li class="nav-itens"><a href="motorista/motorista.php">Motorista</a></li>
                     <li class="nav-itens"><a href="documentacao/documentacao.php">Documentação</a></li>
-                    <li class="nav-itens nav-itens-ultimo"><a onclick="verificaLogin();"><img src="assets/img/usuario.svg" alt="imagem do icone de perfil usuario" style="width: 30px; height: 30px;"></a></li>
+                    <li class="nav-itens nav-itens-ultimo"><a href="perfil-usuario/cadastro.php"><img src="assets/img/usuario.svg" alt="imagem do icone de perfil usuario" style="width: 30px; height: 30px;"></a></li>
                 </ul>
             </div>
 
@@ -25,7 +25,7 @@
                 <li class="nav-itens nav-itens-mobile"><a href="passageiro/passageiro.php">Passageiro</a></li>
                 <li class="nav-itens nav-itens-mobile"><a href="motorista/motorista.php">Motorista</a></li>
                 <li class="nav-itens nav-itens-mobile"><a href="documentacao/documentacao.php">Documentação</a></li>
-                <li class="nav-itens nav-itens-ultimo"><a onclick="verificaLogin();"><img src="assets/img/usuario.svg" alt="imagem do icone de perfil usuario" style="width: 30px; height: 30px;"></a></li>
+                <li class="nav-itens nav-itens-ultimo"><a href="perfil-usuario/cadastro.php"><img src="assets/img/usuario.svg" alt="imagem do icone de perfil usuario" style="width: 30px; height: 30px;"></a></li>
             </ul>
         </nav>
     </header>
@@ -40,7 +40,7 @@
                 <li class="nav-itens"><a href="../passageiro/passageiro.php">Passageiro</a></li>
                 <li class="nav-itens"><a href="../motorista/motorista.php">Motorista</a></li>
                 <li class="nav-itens"><a href="../documentacao/documentacao.php">Documentação</a></li>
-                <li class="nav-itens nav-itens-ultimo"><a onclick="verificaLogin();" ><img src="../assets/img/usuario.svg" alt="imagem do icone de perfil usuario" style="width: 30px; height: 30px;"></a></li>
+                <li class="nav-itens nav-itens-ultimo"><a href="../perfil-usuario/cadastro.php"><img src="../assets/img/usuario.svg" alt="imagem do icone de perfil usuario" style="width: 30px; height: 30px;"></a></li>
             </ul>
         </div>
 
@@ -53,7 +53,7 @@
             <li class="nav-itens nav-itens-mobile"><a href="../passageiro/passageiro.php">Passageiro</a></li>
             <li class="nav-itens nav-itens-mobile"><a href="../motorista/motorista.php">Motorista</a></li>
             <li class="nav-itens nav-itens-mobile"><a href="../documentacao/documentacao.php">Documentação</a></li>
-            <li class="nav-itens"><a onclick="verificaLogin();" style="display: inline-block; height: 24px;"><img src="../assets/img/usuario.svg" alt="icone de usuario"></a></li>
+            <li class="nav-itens"><a href="../perfil-usuario/cadastro.php" style="display: inline-block; height: 24px;"><img src="../assets/img/usuario.svg" alt="icone de usuario"></a></li>
         </ul>
     </nav>
 </header><?php

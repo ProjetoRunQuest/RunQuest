@@ -31,7 +31,7 @@ $is_index = 2;
                 </div>
                 <span class="barra-lateral-active"></span>
 
-                <a onclick="sair();" class='logout-usuario'><img src="../assets/img/logout-usuario.png" alt="icone logout usuario"></a>
+                <a href="#" class='logout-usuario'><img src="../assets/img/logout-usuario.png" alt="icone logout usuario"></a>
             </div>
             <div class="container-perfil">
                 <h1 class='titulo-perfil'>Meu Perfil</h1>
@@ -43,7 +43,6 @@ $is_index = 2;
                     <form action="#" class="form-cadastro">
                         <img src="../assets/img/img-usuario.png" alt="foto do usuario" class="img-perfil">
                         <button class="botao-info" value='perfil' onclick="abrirModal(this.value)">Alterar Foto de Perfil</button>
-                        <button class="botao-info" value='deletarConta' onclick="deletarConta();">Deletar Conta</button>
                     </form>
                 </div>
             </div>
@@ -63,8 +62,6 @@ $is_index = 2;
     require_once '../footer/footer.php';
     ?>
 </body>
-    <script src="../assets/js/motoristaCrud.js"></script>
-    <script src="../assets/js/passageiroCrud.js"></script>
-    <script src="../assets/js/perfil-usuario.js"></script>
     <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/perfil.js"></script>
 </html>

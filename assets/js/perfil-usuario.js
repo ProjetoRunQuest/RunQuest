@@ -7,7 +7,7 @@ for(let i = 0; i < opcoesNav.length; i++){
         const barraActive = document.getElementsByClassName('barra-lateral-active')
         const logout = document.getElementsByClassName('logout-usuario')
         
-        //Verificando se o elemento está no hover e fazedno a barra o acompanhar
+        //Verificando se o elemento está no hover e fazendo a barra o acompanhar
         //foto de perfil
         if(opcoesNav[0].matches(':hover')){
             barraActive[0].style.top = '20px';
@@ -17,7 +17,6 @@ for(let i = 0; i < opcoesNav.length; i++){
         //Meus pagamentos
         }else if(opcoesNav[2].matches(':hover')){
             barraActive[0].style.top = '165px';
-        //Privacidade e segurança
         }
 
         for(let i = 0; i < opcoesNav.length; i++){
@@ -25,7 +24,6 @@ for(let i = 0; i < opcoesNav.length; i++){
             barraActive[0].style.width = '263px';
             barraL[0].style.marginLeft = '0';
             //foto de perfil
-
             barraL[0].addEventListener('mouseover', function(){
                 opcoesNav[i].style.maxWidth = '200px';
                 barraActive[0].style.width = '263px';

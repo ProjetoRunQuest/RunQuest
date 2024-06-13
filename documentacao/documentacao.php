@@ -20,7 +20,12 @@ $is_index = 2;
 <!--OBJETIVO RUNQUEST-->
 <section id="objetivo" class='container-animacao'>
     <h1 class="titulo-objetivo">Objetivo do Projeto</h1>
-    <p class="texto-objetivo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nihil debitis, aperiam expedita laboriosam voluptates. Iste beatae consequuntur facere tempora harum quas, delectus quisquam minus. Consequuntur odio tempora rerum officia Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quasi? Facilis tempore dicta quod, maxime cumque libero saepe cupiditate a eius! Id fuga minima aspernatur magni sunt quaerat vero reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad accusamus aliquam dolor. Ducimus suscipit pariatur magni eaque nulla! Nulla vero tempore veniam esse voluptas quod ex, tempora exercitationem facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo perspiciatis sapiente corrupti dolores, cupiditate, animi soluta porro dignissimos aspernatur vel minus, praesentium nostrum ratione quod in tenetur blanditiis ex pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, tenetur enim qui, autem rem officiis voluptates voluptatum dolores reprehenderit earum itaque quo numquam. Dolores possimus ut qui, veniam rerum animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, impedit. Laborum, aperiam perspiciatis nostrum, perferendis quam sint vitae adipisci ab nulla incidunt sapiente harum, amet corrupti molestias ex recusandae earum.</p>
+    <p class="texto-objetivo">O projeto visa desenvolver e implementar uma plataforma de compartilhamento de caronas específica para a comunidade da FATEC, com o objetivo de melhorar a mobilidade acadêmica. A proposta é incentivar o compartilhamento de caronas para reduzir a quantidade de veículos nas estradas, promover a conexão entre as pessoas, criar oportunidades de interações pessoais positivas e ampliar o networking entre os membros da comunidade. Além disso, busca contribuir com a economia de tempo e despesas de transporte, tornando o acesso à educação mais acessível e promovendo uma cultura de sustentabilidade.</p>
+    <p class="texto-objetivo">
+    Para atingir esses objetivos, o projeto foca inicialmente no desenvolvimento de uma interface de usuário intuitiva e atraente para engajar mais pessoas na plataforma. Em seguida, será implementada a funcionalidade de registro de usuários, permitindo que estudantes, professores e funcionários possam se cadastrar facilmente. A integração de sistemas de geolocalização permitirá que os usuários solicitem ou ofereçam caronas com base em sua localização atual, enquanto um sistema de avaliação e comentários garantirá a segurança e a confiabilidade das caronas.
+    </p>
+    <p class="texto-objetivo">O projeto também incluirá a realização de testes de usabilidade para assegurar uma experiência satisfatória para os usuários e documentar resultados para futuras melhorias. Além disso, a integração com APIs de terceiros permitirá recursos de compartilhamento nas redes sociais, ampliando a divulgação e adoção da plataforma. Por fim, será preparado material de marketing, incluindo imagens e textos descritivos, para o lançamento oficial do aplicativo, atraindo e engajando os membros da comunidade da FATEC.
+    A organização dos objetivos segue uma sequência lógica, começando pelo desenvolvimento da interface de usuário e registro de usuários, passando pela implementação das funcionalidades essenciais do aplicativo, realização de testes de usabilidade, integração com APIs de terceiros, e culminando na preparação para o lançamento oficial. Essa abordagem sequencial garante que cada etapa seja concluída antes de prosseguir para a próxima, proporcionando um fluxo de trabalho eficiente e ordenado. Este projeto, portanto, não só visa melhorar a mobilidade da comunidade acadêmica da FATEC, mas também promover uma cultura de sustentabilidade e interação social, tornando o acesso à educação mais acessível e eficiente.</p>
 
     <div class="container-pdf">
     <embed src="../assets/docs/PojetoItegrador3entrega.pdf" type="application/pdf" width='100%' height='100%'>
@@ -31,16 +36,23 @@ $is_index = 2;
 <!--AGRADECIMENTOS-->
 <section id="agradecimentos" class='container-animacao'>
     <h1 class="titulo-agradecimentos">Agradecimentos</h1>
-    <p class="texto-agradecimentos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum similique architecto doloribus sequi aspernatur dignissimos praesentium tempora repudiandae nihil quis ab autem, accusamus dolorem officia fuga natus labore neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquid eum qui excepturi ea. Maxime repellendus aut suscipit sint animi id quibusdam modi? Neque blanditiis animi id, natus temporibus eveniet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam repellendus vero eius mollitia expedita itaque officia, soluta, asperiores odit iste quod sed enim nam fugiat! Molestias voluptate quaerat eos iste? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas harum esse illum velit impedit totam incidunt in accusamus rerum, exercitationem dolores nulla, quidem repellat laudantium cumque dolorum sint amet repudiandae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde tempora ullam, quis sunt laboriosam quod corrupti illum et vitae, nisi quas optio ut, voluptas excepturi delectus fugit maxime deleniti officiis.</p>
+    <p class="texto-agradecimentos">Gostaríamos de expressar nossa profunda gratidão à FATEC Diadema e a todos os professores que nos apoiaram ao longo do desenvolvimento do Projeto Runquest. Sem a colaboração, orientação e suporte incansáveis de cada um de vocês, este projeto não teria sido possível.</p>
+    <p class="texto-agradecimentos">
+    A FATEC Diadema tem sido um pilar fundamental para a realização de nossas ideias e objetivos. A estrutura fornecida, junto com o ambiente acadêmico estimulante, permitiu-nos explorar, inovar e alcançar novas metas. Agradecemos pela oportunidade de fazer parte desta instituição que promove a excelência e o desenvolvimento contínuo.
+    </p>
+    <p class="texto-agradecimentos">
+    Aos professores envolvidos no Projeto Runquest, nossa admiração e reconhecimento. Suas orientações foram cruciais para superar os desafios que encontramos ao longo do caminho. A paciência, o conhecimento compartilhado e a dedicação de vocês inspiraram-nos a dar o nosso melhor e a acreditar na importância e no impacto de nosso trabalho.
+    </p>
+    <p class="texto-agradecimentos">
+    O sucesso do Projeto Runquest é um reflexo direto do apoio inestimável que recebemos da FATEC Diadema e de seus brilhantes educadores. Este agradecimento é apenas uma pequena demonstração da nossa imensa gratidão por tudo que fizeram por nós. Muito obrigado!
+    </p>
 </section>
 
 <!--Footer-->
 <?php require_once '../footer/footer.php'?>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="../assets/js/motoristaCrud.js"></script>
-<script src="../assets/js/passageiroCrud.js"></script>
-<script src="assets/js/animacao.js"></script>
-<script src="assets/js/header.js"></script>
+<script src="../assets/js/animacao.js"></script>
+<script src="../assets/js/header.js"></script>
 </body>
 </html>

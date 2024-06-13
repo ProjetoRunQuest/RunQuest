@@ -15,7 +15,7 @@ $is_index = 2;
     <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
     <title>Passageiro</title>
 </head>
-<body>
+<body onload="local()">
     <!--MENU-->
     <?php require_once '../header/header.php'; 
     ?>
@@ -69,7 +69,7 @@ $is_index = 2;
                             <label for="cidadePassageiro">Cidade:</label>
                             <input type="text" name="cidade" class="form-input" placeholder='Digite sua cidade...' id="cidadePassageiro">
 
-                            <span class='span-botao'><button onclick='cadastrarPassageiro();' class='botao-banner' value='motorista'>Cadastrar</button></span>
+                            <span class='span-botao'><button onclick='redirecionar(this.value)' class='botao-banner' value='motorista'>Cadastrar</button></span>
                         </div>
 
                     </div>
@@ -82,7 +82,7 @@ $is_index = 2;
                             <label for="senhaLoginP">Senha:</label>
                             <input type="password" name="senhaLogin" id="senhaLoginP" placeholder="Digite sua senha..." class='input-senha-login'>
                             <span class="senha-login" onclick='senha(1)'></span>
-                            <span class='span-botao'><button onclick='logarPassageiro();' class='botao-banner' value='motorista'>Logar</button></span>
+                            <span class='span-botao'><button onclick='redirecionar(this.value)' class='botao-banner' value='motorista'>Logar</button></span>
                         </div>
                     </div>
                 </div>
@@ -93,21 +93,21 @@ $is_index = 2;
          <section id="vantagens">
             <div class="container-vantagens container-animacao">
                 <div class="container-teste">
-                    <img src="../assets/img/ganhos.svg" alt="icone vantagens RunQuest" class="vantagens-img">
-                    <h1 class="titulo-vantagens">Ganhos</h1>
-                    <p class="texto-vantagens">Na RunQuest tanto o motorista como o passageiro são beneficiados com políticas não abusivas por parte da empresa e um preço acessível para o usuário final.</p>
+                    <img src="../assets/img/seguranca.svg" alt="icone vantagens RunQuest" class="vantagens-img">
+                    <h1 class="titulo-vantagens">Conforto e Segurança</h1>
+                    <p class="texto-vantagens">Todos os motoristas do Runquest passam por um rigoroso processo de seleção e verificação, garantindo que você viaje com profissionais qualificados e confiáveis, além de poder acompanhar sua viagem em tempo real através do site, garantindo maior segurança e transparência.</p>
                 </div>
 
                 <div class="container-teste">
-                    <img src="../assets/img/pre-requisitos.svg" alt="icone vantagens RunQuest" class="vantagens-img">
-                    <h1 class="titulo-vantagens">Pré-requisitos</h1>
-                    <p class="texto-vantagens">Para utilizar nosso sistema é necessário ter um dispositivo móvel, desktop ou notebook com acesso a internet, a serviços de geolocalização e ser parte do corpo docente ou discente das fatecs.</p>
+                    <img src="../assets/img/economia.svg" alt="icone vantagens RunQuest" class="vantagens-img">
+                    <h1 class="titulo-vantagens">Economia e Comodidade</h1>
+                    <p class="texto-vantagens">Oferecemos preços acessíveis e justos, com diversas opções de pagamento para facilitar sua vida, além de oferecermos promoções exclusivas e descontos especiais ao se cadastrar e utilizar o Runquest regularmente para clientes fidelizados. Além disso, possuímos transparência total na fórmula de ganhos.</p>
                 </div>
 
                 <div class="container-teste">
-                    <img src="../assets/img/formula.svg" alt="icone vantagens RunQuest" class="vantagens-img">
-                    <h1 class="titulo-vantagens">Fórmula</h1>
-                    <p class="texto-vantagens">O cálculo é feito por uma função afim em que a = preço fixo do km(R$ 0.5/km), x = km rodados e b um preço fixo(R$ 3). Do resultado é tirado 10% para manutenção de custos, o resto fica para o motorista.</p>
+                    <img src="../assets/img/experiencia.svg" alt="icone vantagens RunQuest" class="vantagens-img">
+                    <h1 class="titulo-vantagens">Experiência Personalizada</h1>
+                    <p class="texto-vantagens">Nosso site oferece uma experiência especial por aplicarmos diversos conceitos de boas práticas de usabilidade, sempre pensando no nosso cliente e em como poderíamos tornar a plataforma o mais intuitivo possível, a fim de garantirmos uma a fidelização do cliente a longo prazo.</p>
                 </div>
 
             </div>
@@ -121,8 +121,8 @@ $is_index = 2;
                 <div class="linha-roadmap"></div>
                 <div class="container-texto-roadmap">
                     <p class="texto-roadmap">Cadastro</p>
-                    <p class="texto-roadmap">Validação do veículo</p>
-                    <p class="texto-roadmap">Envio de foto do rosto</p>
+                    <p class="texto-roadmap">Validação de documentos</p>
+                    <p class="texto-roadmap">Cadastro de uma forma de pagamento</p>
                     <p class="texto-roadmap">Aceitar termos de uso</p>
                     <p class="texto-roadmap">Pronto para uso!</p>
                 </div>
