@@ -118,6 +118,16 @@ $is_index = 1;
             </div>
         </section>
 
+        <!--Faça uma corrida-->
+        <section id="corrida">
+            <h1 class="titulo-corrida">Faça uma corrida conosco!</h1>
+            <div class="container-img-corrida">
+                <img src="assets/img/img-corrida.svg" alt="imagem svg de um carro para simular uma corrida">
+            </div>
+            <div class="container-conteudo">
+            <span class='span-botao'><a href="corrida/pedir-corrida.php"><button class='botao-banner botao-corrida' value='corrida'>Faça sua corrida</button></a></span>
+            </div>
+        </section>
         <!--Nossa equipe-->
         <section id="nossa-equipe" class='container-animacao'>
             <h1 class="titulo-equipe">Conheça nossa equipe</h1>

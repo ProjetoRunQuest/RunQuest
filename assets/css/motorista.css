@@ -92,9 +92,17 @@ body{
     flex-wrap: wrap;
 }
 
+.container-senha{
+    position: relative;
+}
+
 .container-info:nth-child(2){
     grid-column-start: 1;
     grid-column-end: 2;
+}
+
+.container-form-login .container-info{
+    position: relative;
 }
 
 /*Botão Navegável*/
@@ -145,6 +153,34 @@ body{
     background-color: transparent;
     margin-top: .8rem;
     position: relative;
+}
+
+.nova-senha{
+    content: '';
+    background-image: url('../img/senha-escondida.svg');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 39px;
+    right: 59px;
+}
+
+.senha-login{
+    content: '';
+    background-image: url('../img/senha-escondida.svg');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 117px;
+    right: 11px;
+}
+
+.nova-senha:hover, .senha-login:hover{
+    cursor: pointer;
 }
 
 .container-form-login button{

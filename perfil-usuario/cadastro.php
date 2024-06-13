@@ -51,12 +51,12 @@ $is_index = 2;
                         <input type="password" name="senha-atual" id="senha-atual" class="input-cadastro" disabled>
 
                         <label for="nova-senha">Nova Senha:</label>
-                        <input type="password" name="nova-senha" id="nova-senha" class="input-cadastro" placeholder="Digite uma nova senha...">
-                        <span class="nova-senha"></span>
+                        <input type="password" name="nova-senha" id="nova-senha" class="input-cadastro input-nova-senha" placeholder="Digite uma nova senha...">
+                        <span class="nova-senha" onclick='senha(0)'></span>
 
                         <label for="confirmar-senha">Confirmar Senha:</label>
-                        <input type="password" name="confirmar-senha" id="confirmar-senha" class="input-cadastro" placeholder="Confirme a nova senha...">
-                        <span class="confirmar-senha"></span>
+                        <input type="password" name="confirmar-senha" id="confirmar-senha" class="input-cadastro input-confirmar-senha" placeholder="Confirme a nova senha...">
+                        <span class="confirmar-senha" onclick='senha(1)'></span>
                         <span class='span-botao'><button type='submit' class='btn-cadastro' value='motorista'>Salvar Alterações</button></span>
                         
                     </form>

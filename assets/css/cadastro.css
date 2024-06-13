@@ -136,7 +136,7 @@ body{
     top: 446px;
 }
 
-.nova-senha:hover{
+.nova-senha:hover, .confirmar-senha:hover{
     cursor: pointer;
 }
 

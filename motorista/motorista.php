@@ -44,7 +44,8 @@ $is_index = 2;
 
                         <div class="container-info container-senha">
                             <label for="nome">Senha:</label>
-                            <input type="password" name="senha" class="form-input" placeholder='Digite sua senha...' id="senha" required>
+                            <input type="password" name="senha" class="form-input cadastro-senha" placeholder='Digite sua senha...' id="senha" required>
+                            <span class="nova-senha" onclick='senha(0)'></span>
                         </div>
                         
                         <div class="container-info container-cpf">
@@ -114,7 +115,8 @@ $is_index = 2;
                             <input type="email" name="emailLogin" id="emailLogin" placeholder="Digite seu email..." class="form-input">
 
                             <label for="senhaLogin">Senha:</label>
-                            <input type="password" name="senhaLogin" id="senhaLogin" placeholder="Digite sua senha...">
+                            <input type="password" name="senhaLogin" id="senhaLogin" placeholder="Digite sua senha..." class='login-senha'>
+                            <span class="senha-login" onclick='senha(1)'></span>
                             <div class="container-botao-login">
                                 <span class="span-botao"><button onclick="logarPassageiro();">Logar</button></span>
                             </div>

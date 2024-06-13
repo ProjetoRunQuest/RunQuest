@@ -45,7 +45,7 @@ body{
     width: 103px;
     height: 60px;
     z-index: -1;
-    top: 96px;
+    top: 20px;
     transition: all ease-in-out 500ms;
 }
 

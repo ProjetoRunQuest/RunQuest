@@ -5,7 +5,6 @@ for(let i = 0; i < opcoesNav.length; i++){
     opcoesNav[i].addEventListener('mouseover', function(){
         const barraL = document.getElementsByClassName('barra-lateral');
         const barraActive = document.getElementsByClassName('barra-lateral-active')
-        const logout = document.getElementsByClassName('logout-usuario')
         
         //Verificando se o elemento está no hover e fazedno a barra o acompanhar
         //foto de perfil
@@ -45,7 +44,7 @@ barraL[0].addEventListener('mouseout', function(){
 
 
         if(!opcoesNav[i].matches(':hover') && !barraL[0].matches(':hover')){
-            barraActive[0].style.top = '165px';
+            barraActive[0].style.top = '20px';
         }
     }
 })

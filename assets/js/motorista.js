@@ -33,3 +33,23 @@ function abrirCadastro(){
         }, 400)
     }, 350)
 }
+
+//Função para ativar a visualização da senha
+function senha(v){
+    const cadastroSenha = document.getElementsByClassName('cadastro-senha');
+    const loginSenha = document.getElementsByClassName('login-senha');
+
+    if(v == 0){
+        if(cadastroSenha[0].type === 'password'){
+            cadastroSenha[0].type = 'text';
+        }else{
+            cadastroSenha[0].type = 'password';
+        }
+    }else{
+        if(loginSenha[0].type === 'password'){
+            loginSenha[0].type = 'text';
+        }else{
+            loginSenha[0].type = 'password'
+        }
+    }
+}

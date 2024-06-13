@@ -30,25 +30,25 @@ body{
 }
 
 .banner-titulo{
-    font-size: clamp(20px + 1.5vw, 0.3043rem + 2.8vw, 42px);
+    font-size: clamp(14px + 1.5vw, 0.3043rem + 2.8vw, 42px);
     color: #D20909;
 
 }
 
-.container-botao button{
+.container-botao button, .botao-corrida{
     color: #000;
     font-size: clamp(20px, 2vw, 18px);
     border: var(--borda-div);
     border-radius: 40px;
     padding: 15px 20px;
     position: relative;
-    transition: width ease-in-out 500ms;
+    transition: width, color ease-in-out 500ms;
     text-decoration: none;
     background-color: transparent;
     z-index: 1;
 }
 
-.container-botao button:hover{
+.container-botao button:hover, .botao-corrida:hover{
     cursor: pointer;
     border-color: #D20909;
     color: #FFF;
@@ -84,7 +84,7 @@ body{
 }
 
 .titulo-trabalhos{
-    font-size: clamp(20px + 1.5vw, 0.3043rem + 2.8vw, 42px);
+    font-size: clamp(14px + 1.5vw, 0.3043rem + 2.8vw, 42px);
     text-align: center;
 
 }
@@ -203,7 +203,7 @@ body{
 
 .titulo-runquest{
     text-align: center;
-    font-size: clamp(20px + 1.5vw, 0.3043rem + 2.8vw, 42px);
+    font-size: clamp(14px + 1.5vw, 0.3043rem + 2.8vw, 42px);
 }
 
 .texto-runquest{
@@ -211,6 +211,31 @@ body{
     max-width: 610px;
     margin-top: 3rem;
     text-align: center;
+}
+
+/*Corrida*/
+#corrida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: #1E1E1E;
+}
+
+.titulo-corrida{
+    font-size: clamp(14px + 1.5vw, 0.3043rem + 2.8vw, 42px);
+
+}
+
+.botao-corrida{
+    color: #FFF;
+}
+
+.container-img-corrida{
+    width: 80%;
+    max-width: 800px;
+    height: auto;
 }
 
 /*Nossa equipe*/
@@ -225,7 +250,7 @@ body{
 }
 
 .titulo-equipe{
-    font-size: var(--tamanho-titulo);
+    font-size: clamp(14px + 1.5vw, 0.3043rem + 2.8vw, 42px);
     text-align: center;
 }
 
@@ -434,6 +459,12 @@ body{
 
     .slide-container{
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #corrida{
+        padding: 4rem 1rem;
     }
 }
 

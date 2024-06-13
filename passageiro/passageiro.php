@@ -40,7 +40,8 @@ $is_index = 2;
                             <input type="email" name="email" class="form-input" placeholder='Digite seu email...' id="emailPassageiro">
                             
                             <label for="senhaPassageiro">Senha:</label>
-                            <input type="password" name="senha" class="form-input" placeholder='Digite sua senha...' id="senhaPassageiro">
+                            <input type="password" name="senha" class="form-input cadastro-senha" placeholder='Digite sua senha...' id="senhaPassageiro">
+                            <span class="nova-senha" onclick='senha(0)'></span>
 
                             <label for="cpfPassageiro">CPF:</label>
                             <input type="text" name="cpf" class="form-input" placeholder='Digite seu CPF...' id="cpfPassageiro" maxlength="14" onkeyup="mascara(this, mascaraCPF)">
@@ -68,7 +69,7 @@ $is_index = 2;
                             <label for="cidadePassageiro">Cidade:</label>
                             <input type="text" name="cidade" class="form-input" placeholder='Digite sua cidade...' id="cidadePassageiro">
 
-                            <button onclick='cadastrarPassageiro();'>Cadastrar</button>
+                            <span class='span-botao'><button onclick='redirecionar(this.value)' class='botao-banner' value='motorista'>Cadastrar</button></span>
                         </div>
 
                     </div>
@@ -79,10 +80,51 @@ $is_index = 2;
                             <input type="email" name="emailLogin" id="emailLoginP" placeholder="Digite seu email..." class="form-input">
 
                             <label for="senhaLoginP">Senha:</label>
-                            <input type="password" name="senhaLogin" id="senhaLoginP" placeholder="Digite sua senha...">
-                            <button onclick="logarPassageiro();">Logar</button>
+                            <input type="password" name="senhaLogin" id="senhaLoginP" placeholder="Digite sua senha..." class='input-senha-login'>
+                            <span class="senha-login" onclick='senha(1)'></span>
+                            <span class='span-botao'><button onclick='redirecionar(this.value)' class='botao-banner' value='motorista'>Logar</button></span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+         <!--VANTAGENS DE SER MOTORISTA-->
+         <section id="vantagens">
+            <div class="container-vantagens container-animacao">
+                <div class="container-teste">
+                    <img src="../assets/img/seguranca.svg" alt="icone vantagens RunQuest" class="vantagens-img">
+                    <h1 class="titulo-vantagens">Conforto e Segurança</h1>
+                    <p class="texto-vantagens">Todos os motoristas do Runquest passam por um rigoroso processo de seleção e verificação, garantindo que você viaje com profissionais qualificados e confiáveis, além de poder acompanhar sua viagem em tempo real através do site, garantindo maior segurança e transparência.</p>
+                </div>
+
+                <div class="container-teste">
+                    <img src="../assets/img/economia.svg" alt="icone vantagens RunQuest" class="vantagens-img">
+                    <h1 class="titulo-vantagens">Economia e Comodidade</h1>
+                    <p class="texto-vantagens">Oferecemos preços acessíveis e justos, com diversas opções de pagamento para facilitar sua vida, além de oferecermos promoções exclusivas e descontos especiais ao se cadastrar e utilizar o Runquest regularmente para clientes fidelizados. Além disso, possuímos transparência total na fórmula de ganhos.</p>
+                </div>
+
+                <div class="container-teste">
+                    <img src="../assets/img/experiencia.svg" alt="icone vantagens RunQuest" class="vantagens-img">
+                    <h1 class="titulo-vantagens">Experiência Personalizada</h1>
+                    <p class="texto-vantagens">Nosso site oferece uma experiência especial por aplicarmos diversos conceitos de boas práticas de usabilidade, sempre pensando no nosso cliente e em como poderíamos tornar a plataforma o mais intuitivo possível, a fim de garantirmos uma a fidelização do cliente a longo prazo.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--ROADMAP MOTORISTA-->
+        <section id="roadmap-motorista" class='container-animacao'>
+            <h1 class="titulo-roadmap">Roadmap</h1>
+
+            <div class="container-roadmap">
+                <div class="linha-roadmap"></div>
+                <div class="container-texto-roadmap">
+                    <p class="texto-roadmap">Cadastro</p>
+                    <p class="texto-roadmap">Validação de documentos</p>
+                    <p class="texto-roadmap">Cadastro de uma forma de pagamento</p>
+                    <p class="texto-roadmap">Aceitar termos de uso</p>
+                    <p class="texto-roadmap">Pronto para uso!</p>
                 </div>
             </div>
         </section>

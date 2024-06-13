@@ -62,6 +62,6 @@ $is_index = 2;
     require_once '../footer/footer.php';
     ?>
 </body>
-    <script src="../assets/js/perfil-usuario.js"></script>
     <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/perfil.js"></script>
 </html>
