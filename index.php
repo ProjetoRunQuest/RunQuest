@@ -118,16 +118,17 @@ $is_index = 1;
             </div>
         </section>
 
-        <!--Faça uma corrida-->
-        <section id="corrida">
+                <!--Faça uma corrida-->
+                <section id="corrida" class='container-animacao'>
             <h1 class="titulo-corrida">Faça uma corrida conosco!</h1>
             <div class="container-img-corrida">
                 <img src="assets/img/img-corrida.svg" alt="imagem svg de um carro para simular uma corrida">
             </div>
             <div class="container-conteudo">
-            <span class='span-botao'><a href="corrida/pedir-corrida.php"><button class='botao-banner botao-corrida' value='corrida'>Faça sua corrida</button></a></span>
+            <span class='span-botao span-botao-corrida'><a href="corrida/pedir-corrida.php"><button class='botao-banner botao-corrida' value='corrida'>Faça sua corrida</button></a></span>
             </div>
         </section>
+
         <!--Nossa equipe-->
         <section id="nossa-equipe" class='container-animacao'>
             <h1 class="titulo-equipe">Conheça nossa equipe</h1>
@@ -194,6 +195,8 @@ $is_index = 1;
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/motoristaCrud.js"></script>
+<script src="assets/js/passageiroCrud.js"></script>
 <script src="assets/js/animacao.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/header.js"></script>

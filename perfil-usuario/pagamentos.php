@@ -25,7 +25,7 @@
                 <a href="pagamentos.php" class="opcoes-nav"><img src="../assets/img/pagamento-usuario.png" alt="icone pagamentos">Meus Pagamentos</a>
             </div>
             <span class="barra-lateral-active"></span>
-            <a href="#" class="logout-usuario"><img src="../assets/img/logout-usuario.png" alt="icone logout usuario"></a>
+            <a onclick="sair();" class="logout-usuario"><img src="../assets/img/logout-usuario.png" alt="icone logout usuario"></a>
         </div>
         <div class="container-conteudo-pagamento">
             <h1 class="titulo-pagamento">Meus pagamentos</h1>
@@ -35,26 +35,23 @@
 
             <form action="#" class="form-pagamento">
                 <label for="nome">Nome inscrito:</label>
-                <input type="text" name="nome" id="nome" class="input-cadastro" disabled>
+                <input type="text" name="nome" id="nome" class="input-cadastro" disabled placeholder="Matheus A R Ayaviri">
 
                 <label for="numero-cartao">Número do cartão:</label>
-                <input type="text" name="numero-cartao" id="numero-cartao" class="input-cadastro" disabled>
-
-                <label for="senha-atual">Senha Atual:</label>
-                <input type="password" name="senha-atual" id="senha-atual" class="input-cadastro" disabled>
+                <input type="text" name="numero-cartao" id="numero-cartao" class="input-cadastro" disabled placeholder="5181 3026 9018 4866">
 
                 <label for="cpf">CPF do titular:</label>
-                <input type="text" name="cpf" id='cpf' class="input-cadastro" disabled>
+                <input type="text" name="cpf" id='cpf' class="input-cadastro" disabled placeholder="538.264.338-58">
 
                 <div class="container-cartao">
                     <div class="container-codigo">
                         <label for="cvv">Código de segurança(CVV):</label>
-                        <input type="text" name="cvv" id="cvv" class="input-cadastro" disabled>
+                        <input type="text" name="cvv" id="cvv" class="input-cadastro" disabled placeholder="366">
                     </div>
 
                     <div class="container-validade">
                         <label for="validade">Validade:</label>
-                        <input type="text" name="validade" id="validade" class='input-cadastro' disabled>
+                        <input type="text" name="validade" id="validade" class='input-cadastro' disabled placeholder='06/31'>
                     </div>
                 </div>
                 <span class='span-botao'><button type='submit' class='btn-cadastro' value='motorista'>Excluir Alterações</button></span>
@@ -63,7 +60,7 @@
 </div>
 
             
-        <div class="container-pagamento">
+        <div class="container-pagamento" style='display: none'>
             <div class="container-form-pagamento container-cartao-pagamento">
                 <h1 class='titulo-pagamento'>Nenhum cartão cadastrado!</h1>
                 <h2 class="subtitulo-pagamento">Cadastre um agora</h2>

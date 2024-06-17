@@ -38,18 +38,24 @@ function abrirCadastro(){
 function senha(v){
     const cadastroSenha = document.getElementsByClassName('cadastro-senha');
     const loginSenha = document.getElementsByClassName('login-senha');
+    const novaSenha = document.getElementsByClassName('nova-senha');
 
     if(v == 0){
         if(cadastroSenha[0].type === 'password'){
             cadastroSenha[0].type = 'text';
+            novaSenha[0].style.backgroundImage = "url('../assets/img/senha-aberta.svg')";
+            
         }else{
             cadastroSenha[0].type = 'password';
+            novaSenha[0].style.backgroundImage = "url('../assets/img/senha-escondida.svg')";
         }
     }else{
         if(loginSenha[0].type === 'password'){
             loginSenha[0].type = 'text';
+            novaSenha[0].style.backgroundImage = "url('../assets/img/senha-aberta.svg')";
         }else{
             loginSenha[0].type = 'password'
+            novaSenha[0].style.backgroundImage = "url('../assets/img/senha-escondida.svg')";
         }
     }
 }

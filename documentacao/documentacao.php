@@ -28,7 +28,7 @@ $is_index = 2;
     A organização dos objetivos segue uma sequência lógica, começando pelo desenvolvimento da interface de usuário e registro de usuários, passando pela implementação das funcionalidades essenciais do aplicativo, realização de testes de usabilidade, integração com APIs de terceiros, e culminando na preparação para o lançamento oficial. Essa abordagem sequencial garante que cada etapa seja concluída antes de prosseguir para a próxima, proporcionando um fluxo de trabalho eficiente e ordenado. Este projeto, portanto, não só visa melhorar a mobilidade da comunidade acadêmica da FATEC, mas também promover uma cultura de sustentabilidade e interação social, tornando o acesso à educação mais acessível e eficiente.</p>
 
     <div class="container-pdf">
-    <embed src="../assets/docs/PojetoItegrador3entrega.pdf" type="application/pdf" width='100%' height='100%'>
+    <embed src="../assets/docs/projetoIntegradorFinal.pdf" type="application/pdf" width='100%' height='100%'>
     </div>
 </section>
 
@@ -52,7 +52,13 @@ $is_index = 2;
 <?php require_once '../footer/footer.php'?>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="../assets/js/animacao.js"></script>
 <script src="../assets/js/header.js"></script>
+<script src="../assets/js/animacao.js"></script>
+<script src="../assets/js/motoristaCrud.js"></script>
+<script src="../assets/js/passageiroCrud.js"></script>
+
+
+
+
 </body>
 </html>

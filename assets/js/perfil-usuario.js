@@ -120,15 +120,19 @@ function fecharModal(tipoForm){
 function senha(v){
     const novaSenha = document.getElementsByClassName('input-nova-senha');
     const confirmarSenha = document.getElementsByClassName('input-confirmar-senha');
+    const spanNova = document.getElementsByClassName('nova-senha');
+    const spanConfirmar = document.getElementsByClassName('confirmar-senha');
     
     //Se for 0, significa que é o campo nova senha
     if(v == 0){
       //Verificando se o input é o password
       if(novaSenha[0].type === 'password'){
         novaSenha[0].type = 'text';
+        spanNova[0].style.backgroundImage = "url('../assets/img/senha-aberta.svg')";
       //Agora se for de texto, irá voltar para o password
       }else{
         novaSenha[0].type = 'password';
+        spanNova[0].style.backgroundImage = "url('../assets/img/senha-escondida.svg')";
       }
 
     //Se for 1, significa que é o campo confirmar senha
@@ -136,9 +140,11 @@ function senha(v){
         //Verificando se o input é o password
         if(confirmarSenha[0].type === 'password'){
             confirmarSenha[0].type = 'text';
+            spanConfirmar[0].style.backgroundImage = "url('../assets/img/senha-aberta.svg')";
         //Agora se for de texto, irá voltar para o password
         }else{
             confirmarSenha[0].type = 'password'
+            spanConfirmar[0].style.backgroundImage = "url('../assets/img/senha-escondida.svg')";
         }
     }
 }

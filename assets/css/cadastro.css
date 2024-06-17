@@ -118,9 +118,6 @@ body{
     height: 40px;
     padding: .6rem;
     width: 100%;
-}
-
-.input-cadastro::placeholder{
     color: #2F2E2E;
 }
 

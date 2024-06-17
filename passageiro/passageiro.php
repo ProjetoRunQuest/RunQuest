@@ -15,7 +15,7 @@ $is_index = 2;
     <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
     <title>Passageiro</title>
 </head>
-<body onload="local()">
+<body>
     <!--MENU-->
     <?php require_once '../header/header.php'; 
     ?>
@@ -69,7 +69,7 @@ $is_index = 2;
                             <label for="cidadePassageiro">Cidade:</label>
                             <input type="text" name="cidade" class="form-input" placeholder='Digite sua cidade...' id="cidadePassageiro">
 
-                            <span class='span-botao'><button onclick='redirecionar(this.value)' class='botao-banner' value='motorista'>Cadastrar</button></span>
+                            <span class='span-botao'><button onclick='cadastrarPassageiro();' class='botao-banner' value='motorista'>Cadastrar</button></span>
                         </div>
 
                     </div>
@@ -82,7 +82,7 @@ $is_index = 2;
                             <label for="senhaLoginP">Senha:</label>
                             <input type="password" name="senhaLogin" id="senhaLoginP" placeholder="Digite sua senha..." class='input-senha-login'>
                             <span class="senha-login" onclick='senha(1)'></span>
-                            <span class='span-botao'><button onclick='redirecionar(this.value)' class='botao-banner' value='motorista'>Logar</button></span>
+                            <span class='span-botao'><button onclick='logarPassageiro();' class='botao-banner' value='motorista'>Logar</button></span>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,6 @@ $is_index = 2;
             </div>
         </section>
     </main>
-
     <?php require_once '../footer/footer.php' ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
